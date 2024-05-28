@@ -1,0 +1,12 @@
+sending request manually
+curl -X GET "http://localhost:8000/api/v1/reviews/video/12"
+
+curl -X POST "http://localhost:8000/api/v1/reviews/new" -H "Content-Type: application/json" -d "{\"videoId\": 12, \"user\": \"admin\", \"review\": \"good\"}"
+
+curl -X PUT "http://localhost:8000/api/v1/reviews/664fea826a5627d5baa786a7" -H "Content-Type: application/json" -d "{\"videoId\": 12, \"user\": \"admin\", \"review\": \"L take L\"}"
+
+curl -X DELETE "http://localhost:8000/api/v1/reviews/664fea826a5627d5baa786a7"
+
+mongodb access 
+admin
+CF1ZuJTFF7qa3nIN
